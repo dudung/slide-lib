@@ -16,7 +16,7 @@
     {{ $index :=  sub $max 1 }}
     
     <div class="posts-box-container">
-      {{ $paginator := .Paginate .Site.RegularPages }}
+      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "xdeck") }}
       {{ range $paginator.Pages }}
       
         <div class="homepage-posts-box">

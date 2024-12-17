@@ -1,1 +1,1 @@
-raw, unstructured, spontaneous thoughts
+arbitrary idea reusability with hugo
