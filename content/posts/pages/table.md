@@ -9,9 +9,8 @@ authors = ['viridi']
 +++
 <!--more-->
 
-+ There are items to buy as follow. \
-&nbsp;
-No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Item | Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Count&nbsp;&nbsp;&nbsp; | Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
++ There are items to buy as follow.
+No | Item | Price | Count | Total
 :-: | :- | -: | -: | -:
 1 | Eraser | 100 | 2 | 200
 2 | Pencil | 200 | 5 | 1000
