@@ -13,11 +13,13 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
+  //height: 100vh;
+  //width: calc(100vh * 16 / 9); /* Or your desired aspect ratio */
   width: 100vw;
   height: calc(100vw * 9 / 16); /* Or your desired aspect ratio */
   padding: 0;
   background-color: #fff;  /* Background color for the slide */
-  border: 1px solid #888; /* Border for the slide effect */
+  //border: 1px solid #888; /* Border for the slide effect */
 }
 
 .slide-title {
