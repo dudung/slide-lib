@@ -17,7 +17,7 @@ html, body {
   border: 1px solid #888; /* Border for the slide effect */
   box-sizing: border-box;  /* Include padding and border in the width/height calculation */
   background-color: #f4f4f4;  /* Background color for the slide */
-  overflow: hidden;  /* Prevent scrolling beyond the container */
+  overflow-y: scroll;  /* Prevent scrolling beyond the container */
 }
 
 .slide-container {
