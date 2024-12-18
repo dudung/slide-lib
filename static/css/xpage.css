@@ -1,31 +1,23 @@
 /* static/css/xpage.css */
 
-body {
-  width: 100vw;
-  height: 100vh;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  font-family: Calibri
 }
 
-/* Full-width slide container */
 .slide-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  #width: 100%;  /* Full viewport width */
-  #height: calc(100% * 9 / 16); /* Full viewport height */
-  border: 2px solid #000; /* Border for the slide effect */
+  //align-items: center;
+  border: 1px solid #888; /* Border for the slide effect */
   box-sizing: border-box;  /* Include padding and border in the width/height calculation */
-  padding: 20px;  /* Adjust padding as needed */
   background-color: #f4f4f4;  /* Background color for the slide */
   overflow: hidden;  /* Prevent scrolling beyond the container */
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .slide-container {
@@ -34,33 +26,29 @@ html, body {
   left: 0;
   width: 100vw;
   height: calc(100vw * 9 / 16); /* Or your desired aspect ratio */
+  padding: 0;
 }
 
-
-/* Title styling */
 .slide-title {
-  font-size: 3em;
-  margin-top: 20px;  /* Add space between the top of the page and the title */
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;  /* Space between title and content */
-}
-
-/* Content styling */
-.slide-content {
   width: 100%;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px; /* Rounded corners for the content area */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Slight shadow for the content box */
-  overflow-y: auto;  /* Allow scrolling within content area if it overflows */
+  font-size: 6vw;
+  color: #333;
+  margin: 5px;
+  text-align: center;
 }
 
-/* Date styling */
+.slide-content {
+  font-size: 3vw;
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .slide-date {
-  display: block;
-  font-size: 1.2em;
+  width: 10vw;
+  padding: 0.5vw 2vw;
+  font-size: calc(0.5rem + 0.5vw);
   margin-bottom: 20px;
-  text-align: center;
   color: #888;
+  border: 1px solid blue;
 }

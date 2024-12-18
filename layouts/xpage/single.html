@@ -1,19 +1,20 @@
 {{ define "main" }}
   {{ if eq .Type "xpage" }}
     <head>
-      <link rel="stylesheet" href="/slide-lib/css/xpage.css">
+      <link rel="stylesheet" href="/slide-lib/css/xpage.css?v={{ now.Unix }}">
     </head>
   {{ end }}
   
   <div class="slide-container">
     <h1 class="slide-title">{{ .Title }}</h1>
     <div class="slide-content">
-      <time class="slide-date" datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
-        {{ .Date | time.Format ":date_long" }}
-      </time>
       {{ .Content }}
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </div>
+    <div class="slide-date">
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date | time.Format "2006-01-02" }}
+      </time>
+      </div>
   </div>
   {{ partial "posts/math.html" . }}
 {{ end }}
