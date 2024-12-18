@@ -88,3 +88,7 @@ html, body {
 .slide-url {
   color: #4f81bd;
 }
+
+.katex, .katex-display {
+    font-size: 100% !important;
+}
