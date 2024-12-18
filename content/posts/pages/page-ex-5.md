@@ -1,7 +1,7 @@
 +++
 title = 'score'
 date = 2024-12-17T05:25:05+07:00
-type = 'xpage'
+type = 'xpage2'
 draft = false
 categories = ['pages']
 tags = ['slide-lib']

@@ -49,10 +49,11 @@ html, body {
 .slide-date {
   width: 10vw;
   padding: 0.5vw 2vw;
-  font-size: calc(0.5rem + 0.5vw);
-  margin-bottom: 20px;
+  font-size: 1.7vw;
   color: #888;
-  border: 1px solid blue;
+  position: absolute;
+  left: calc(50% - 5vw);
+  top: 92vh;
 }
 
 .slide-left-rect {
