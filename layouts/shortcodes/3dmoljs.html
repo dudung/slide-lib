@@ -21,7 +21,7 @@ lines.shift();
 data = lines.join('\n');
 
 var element = document.getElementById("{{ $id }}");
-var config = { backgroundColor: '#eee' };
+var config = { backgroundColor: 'white' };
 var viewer = $3Dmol.createViewer( element, config );
 viewer.addModelsAsFrames(data, "xyz");
 viewer.animate({loop: "forward",reps: 1});

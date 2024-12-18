@@ -48,6 +48,15 @@ html, body {
   }
 }
 
+.slide-left-rect {
+  position: absolute;
+  top: 54vh;
+  left: 0;
+  width: 2.4vw;
+  height: 27vh;
+  background: #4f81bd;  
+}
+
 .slide-date {
   width: 10vw;
   padding: 0.5vw 2vw;
@@ -58,11 +67,14 @@ html, body {
   top: 92vh;
 }
 
-.slide-left-rect {
+.slide-ref {
+  font-size: 1.5vw;
   position: absolute;
-  top: 54vh;
-  left: 0;
-  width: 2.4vw;
-  height: 27vh;
-  background: #4f81bd;  
+  top: 86vh;
+  width: 86vw;
+  //word-wrap: break-word;
+}
+
+.slide-url {
+  color: #4f81bd;
 }
