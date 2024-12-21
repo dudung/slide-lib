@@ -10,7 +10,7 @@ authors = ['viridi']
 +++
 <!--more-->
 
-+ One of the form is $y = ax^2 + bx + c$.
++ It can be in the form of $y = ax^2 + bx + c$.
 + The name Quadratic comes from "quad" mean-ing square, because the variable gets squared (like $x^2$).
 + It is also called an "Equation of Degree 2" (be-cause of the "2" on the $x$)
 
