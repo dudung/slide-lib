@@ -9,18 +9,43 @@ html, body {
   font-family: Calibri;
 }
 
+/*
 .slide-container {
   position: absolute;
   top: 0;
   left: 0;
-  //height: 100vh;
-  //width: calc(100vh * 16 / 9); /* Or your desired aspect ratio */
   width: 100vw;
-  height: calc(100vw * 9 / 16); /* Or your desired aspect ratio */
+  height: calc(100vw * 9 / 16);
   padding: 0;
-  background-color: #fff;  /* Background color for the slide */
-  //border: 1px solid #888; /* Border for the slide effect */
+  background-color: #fff; 
+  border: 1px solid #888;
 }
+*/
+
+.slide-container {
+  /* Default size based on width */
+  width: 100vw;
+  height: calc(100vw * 9 / 16);
+
+  /* Prevent height overflow */
+  max-height: 100vh;
+  max-width: calc(100vh * 16 / 9);
+
+  /* Center the container */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  #bottom: 0;
+  #right: 0;
+
+  /* Styling for slide effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ccc; /* Optional */
+  border-radius: 8px; /* Optional rounded corners */
+  background-color: #fff; /* Optional background */
+}
+
 
 .slide-title {
   width: 100%;
