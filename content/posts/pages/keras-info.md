@@ -13,5 +13,5 @@ authors = ['viridi']
 - It has a focus on modern deep learning.
 
 {{< ref >}}
--, "Keras: The high-level API for TensorFlow", TensorFlow, 8 Jun 2023, {{< url "https://www.tensorflow.org/guide/keras" >}} [20241124].
+-, "Keras: The high-level API for TensorFlow", TensorFlow, 8 Jun 2023, {{< url "https://www.tensorflow.org/guide/keras" >}} [20241124] 1234567890abcdef 1234567890abcdef.
 {{< /ref >}}
