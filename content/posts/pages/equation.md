@@ -15,4 +15,3 @@ $$\tag{1}
 x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a},
 $$
 which is known as quadratic formula.
-+ The term $D = b^2 - 4ac$ is the discriminant, that determines root existence and number of roots.
