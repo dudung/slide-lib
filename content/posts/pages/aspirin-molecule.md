@@ -1,5 +1,5 @@
 +++
-title = 'molecule'
+title = 'aspirin molecule'
 date = 2024-12-17T05:25:06+07:00
 type = 'xpage2'
 draft = false
@@ -9,7 +9,6 @@ authors = ['viridi']
 +++
 <!--more-->
 
-+ Aspirin molecule (use mouse, mouse + shift, mouse + ctrl).
 {{< 3dmoljs >}}
 21
 Aspirin

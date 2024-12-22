@@ -115,3 +115,13 @@ html, body {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+.mol-container {
+  margin: auto;
+  position: relative;
+  #margin-top: calc(0 * var(--height)) !important;
+  #padding-top: calc(0 * var(--height)) !important;
+  border: 3px solid black !important;
+  height: calc(0.55 * var(--height));
+  width: calc(1.5 * var(--height));
+}

@@ -1,15 +1,6 @@
 {{ $seed := "foo" }}
 {{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
 
-
-<style>
-.mol-container {
-  width: 100%;
-  height: 55vh;
-  position: relative;
-}
-</style>
-
 <div id="{{ $id }}" class="mol-container"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/3Dmol/2.0.1/3Dmol-min.js"></script>
