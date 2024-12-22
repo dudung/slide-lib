@@ -1,11 +1,12 @@
 +++
-date = '2024-11-18T19:06:30+07:00'
-draft = false
 title = 'keras info'
+date = 2024-12-17T05:25:00+07:00
 type = 'xpage2'
+draft = false
 categories = ['pages']
 tags = ['slide-lib']
 authors = ['viridi']
+url = '24l00'
 +++
 <!--more-->
 - Keras is the high-level API of the TensorFlow platform.

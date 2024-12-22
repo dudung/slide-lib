@@ -137,3 +137,15 @@ html, body {
   height: calc(0.65 * var(--height));
   #transform: scale(0.5);
 }
+
+.slide-content pre {
+  margin-left: calc(0.08 * var(--height)) !important;
+  padding-top: calc(0.02 * var(--height)) !important;
+  padding-bottom: calc(0.03 * var(--height)) !important;
+  padding-left: calc(0.075 * var(--height)) !important;
+}
+
+.slide-content pre > code {
+  font-size: calc(0.032 * var(--height));
+}
+
