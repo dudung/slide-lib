@@ -1,5 +1,10 @@
 {{ $seed := "foo" }}
 {{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+{{ $fov := .Get "fov" | default "17" }}
+{{ $tx := .Get "tx" | default "0" }}
+{{ $ty := .Get "ty" | default "0" }}
+{{ $ang := .Get "ang" | default "45" }}
+{{ $ax := .Get "ax" | default "z" }}
 
 <div id="{{ $id }}" class="mol-container"></div>
 
@@ -23,6 +28,8 @@ viewer.setStyle(
   stick: {colorscheme:'grayCarbon'}
 });
 viewer.zoomTo();
-viewer.rotate(45, 'y',);
+viewer.setCameraParameters({ fov:{{ $fov }} , z: 300 });
+viewer.translate({{ $tx }}, {{ $ty }});
+viewer.rotate({{ $ang }}, {{ $ax }});
 viewer.render();
 </script>

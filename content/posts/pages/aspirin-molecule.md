@@ -9,7 +9,7 @@ authors = ['viridi']
 +++
 <!--more-->
 
-{{< 3dmoljs >}}
+{{< 3dmoljs ty=5 ang=45 ax="y" >}}
 21
 Aspirin
 O    1.2333    0.5540    0.7792
