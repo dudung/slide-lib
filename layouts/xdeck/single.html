@@ -1,10 +1,34 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  {{ if eq .Type "xdeck" }}
+    <head>
+      <link rel="stylesheet" href="/slide-lib/css/xdeck.css?v={{ now.Unix }}">
+    </head>
+  {{ end }}
+  
+  <div class="slide-container">
+    <h1 class="slide-title">{{ .Title }}</h1>
+    <div class='slide-rect'></div>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ if .Params.pages }}
+      <ul class='list-of-pages'>
+        {{ range .Params.pages }}
+          <li>
+            <a href="{{ . | relURL }}">{{ . }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <p>No pages found for this deck.</p>
+    {{ end }}
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <div class="slide-content">
+      {{ .Content }}
+    </div>
+    <div class="slide-date">
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">
+        {{ .Date | time.Format "2006-01-02" }}
+      </time>
+      </div>
+  </div>
+  {{ partial "posts/math.html" . }}
 {{ end }}
