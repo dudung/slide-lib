@@ -1,5 +1,5 @@
 +++
-title = 'score'
+title = 'twinkle twinkle little star'
 date = 2024-12-17T05:25:05+07:00
 type = 'xpage2'
 draft = false
@@ -11,7 +11,6 @@ authors = ['viridi']
 
 {{< abcjs >}}
 X:1
-T:Twinkle Twinkle Little Star
 K:C
 L:1/4
 CC GG | AA G2 | CC GG | AA G2 |

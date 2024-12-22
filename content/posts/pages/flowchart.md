@@ -9,7 +9,7 @@ authors = ['viridi']
 +++
 <!--more-->
 
-+ A simple flowchart is as follow.
++ A simple flowchart can be as follow.
 {{< mermaid >}}
 flowchart LR
   B --> I --> C
@@ -25,3 +25,7 @@ flowchart LR
   E(["End"])
 {{< /mermaid >}}
 + Common shapes are Begin / End, Input / Output, Condition, and Process.
+
+{{< ref >}}
+Maciej Duraj, "Basic overview of creating flowcharts using Mermaid", CKEditor, 8 Mar 2000, {{< url "https://ckeditor.com/blog/basic-overview-of-creating-flowcharts-using-mermaid/" >}} [20241222].
+{{< /ref >}}

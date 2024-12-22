@@ -31,7 +31,6 @@ html, body {
   overflow: hidden;
 }
 
-
 .slide-title {
   width: 100%;
   margin-top: calc(0.04 * var(--height));
@@ -121,4 +120,13 @@ html, body {
   position: relative;
   height: calc(0.55 * var(--height));
   width: calc(1.5 * var(--height));
+}
+
+.abcd-js {
+  margin: auto;
+  left: calc(0.05 * var(--height));
+  position: relative;
+  width: calc(1.5 * var(--height));
+  border: 1px solid black;
+  padding-top: 0;
 }
