@@ -60,6 +60,7 @@ html, body {
 }
 
 .slide-content table {
+  #margin-left: calc(0.1 * var(--height));
   margin-top: calc(0.02 * var(--height));
   font-size: 75%;
   line-height: 75%;
@@ -148,4 +149,3 @@ html, body {
 .slide-content pre > code {
   font-size: calc(0.032 * var(--height));
 }
-
