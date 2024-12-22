@@ -27,6 +27,8 @@ html, body {
   
   width: var(--width);
   height: var(--height);
+  
+  overflow: hidden;
 }
 
 
