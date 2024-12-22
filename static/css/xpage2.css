@@ -135,4 +135,5 @@ html, body {
   left: calc(0.05 * var(--height));
   width: calc(1.55 * var(--height));
   height: calc(0.65 * var(--height));
+  #transform: scale(0.5);
 }

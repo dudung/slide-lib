@@ -9,7 +9,7 @@ authors = ['viridi']
 +++
 <!--more-->
 
-{{< scatter fontsize="14" >}}
+{{< scatter >}}
 B_XLABEL x
 B_YLABEL y
 B_SLABEL Data-1,Data-2,Data-3

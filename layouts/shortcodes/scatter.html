@@ -1,7 +1,6 @@
 {{ $r := ( .Inner | chomp) }}
 {{ $seed := "foo" }}
 {{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
-{{ $fs := .Get "fontsize" | default "12" }}
 
 <div class="scatter-container">
     <canvas id="{{ $id }}"></canvas>
@@ -9,6 +8,18 @@
 
 
 <script>
+const container = document.querySelector('.scatter-container');
+const computedStyle = getComputedStyle(container);
+const height = computedStyle.getPropertyValue('--height').trim();
+const tempElement = document.createElement('div');
+tempElement.style.position = 'absolute';
+tempElement.style.visibility = 'hidden';
+tempElement.style.height = height;
+document.body.appendChild(tempElement);
+const resolvedHeight = parseFloat(getComputedStyle(tempElement).height);
+document.body.removeChild(tempElement);
+fs = 0.05 * resolvedHeight;
+
 var r = {{ ( .Inner | chomp) }};
 var eol = getEOL(r);
 var blocks = getBlocks(r, eol);
@@ -39,12 +50,12 @@ for(b of blocks) {
               display: true,
               text: B_XLABEL,
               font: {
-                size: {{ $fs }}
+                size: fs
               }
             },
             ticks: {
               font: {
-                size: {{ $fs }}
+                size: fs
               }
             }
           },
@@ -53,12 +64,12 @@ for(b of blocks) {
               display: true,
               text: B_YLABEL,
               font: {
-                size: {{ $fs }}
+                size: fs
               }
             },
             ticks: {
               font: {
-                size: {{ $fs }}
+                size: fs
               }
             }
           }
@@ -67,7 +78,7 @@ for(b of blocks) {
           legend: {
             labels: {
               font: {
-                size: {{ $fs }}
+                size: fs
               }
             }
           }
