@@ -20,3 +20,7 @@ w:Up a- bove the world so high, like a dia- mond in the sky.
 CC GG | AA G2 | FF EE | DD C2 ||
 w:Twin- kle, twin- kle, lit- tle star, how I won- der what you are!
 {{< /abcjs >}}
+
+{{< ref >}}
+Music Research, "Twinkle Twinkle Little Star Color-Coded", Musescore, 14 May 2024, {{< url "https://musescore.com/user/29277646/scores/6204419" >}} [20241222].
+{{< /ref >}}

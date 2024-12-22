@@ -1,7 +1,7 @@
 {{ $seed := "foo" }}
 {{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
 
-<div class="abcd-js">
+<div class="abcd-js-container">
 <div id="{{ $id }}"></div>
 </div>
 

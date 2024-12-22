@@ -122,11 +122,9 @@ html, body {
   width: calc(1.5 * var(--height));
 }
 
-.abcd-js {
+.abcd-js-container {
   margin: auto;
   left: calc(0.05 * var(--height));
   position: relative;
-  width: calc(1.5 * var(--height));
-  border: 1px solid black;
-  padding-top: 0;
+  width: calc(1.55 * var(--height));
 }
