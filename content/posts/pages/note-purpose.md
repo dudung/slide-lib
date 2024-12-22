@@ -12,4 +12,3 @@ authors = ['viridi']
 + On many an occasion idea comes not at the right time and in the right place for us to further process it immediately.
 + Whether we miss it or forget it, we should write a note about it, so that it can be later processed.
 + How to write a note and retrieve it easily later is a good question.
-+ And that is the purpose of this note.
