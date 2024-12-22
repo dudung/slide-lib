@@ -128,3 +128,11 @@ html, body {
   position: relative;
   width: calc(1.55 * var(--height));
 }
+
+.scatter-container {
+  margin: auto;
+  position: relative;
+  left: calc(0.05 * var(--height));
+  width: calc(1.55 * var(--height));
+  height: calc(0.65 * var(--height));
+}

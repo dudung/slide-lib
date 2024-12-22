@@ -9,8 +9,7 @@ authors = ['viridi']
 +++
 <!--more-->
 
-+ Scatter plot of three series of data.
-{{< scatter 80 320 >}}
+{{< scatter fontsize="14" >}}
 B_XLABEL x
 B_YLABEL y
 B_SLABEL Data-1,Data-2,Data-3
