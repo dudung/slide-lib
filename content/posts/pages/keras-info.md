@@ -1,7 +1,7 @@
 +++
 date = '2024-11-18T19:06:30+07:00'
 draft = false
-title = 'keras'
+title = 'keras info'
 type = 'xpage2'
 categories = ['pages']
 tags = ['slide-lib']
